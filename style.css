@@ -1,4 +1,5 @@
 
+/* GENERAL SETTINGS */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +20,7 @@ body {
     flex-direction: column;
 }
 
-/* NAVIGATION */
+/* NAVIGATION BAR */
 header {
     background: #172c35;
     border-bottom: 1px solid #293c45;
@@ -73,7 +74,7 @@ header {
     cursor: pointer;
 }
 
-/* SECTION NAVIGATION: ONE SECTION AT A TIME */
+/* SECTION NAVIGATION */
 main {
     flex: 1;
     width: 100%;
@@ -87,7 +88,7 @@ main > section.active {
     display: block;
 }
 
-/* HOME */
+/* HOME SECTION */
 main > section.hero.active {
     display: flex;
 }
@@ -127,7 +128,7 @@ main > section.hero.active {
     margin: 14px 0 24px;
 }
 
-/* GENERAL BUTTONS */
+/* BUTTONS */
 .btn {
     display: inline-block;
     margin-top: 22px;
@@ -146,7 +147,7 @@ main > section.hero.active {
     background: #929fe0;
 }
 
-/* ABOUT, SKILLS AND PROJECTS */
+/* GENERAL CONTENT SECTIONS */
 .section {
     max-width: 1000px;
     width: 100%;
@@ -233,7 +234,7 @@ main > section.hero.active {
     margin-bottom: 20px;
 }
 
-/* CONTACT PAGE - MATCHES YOUR REFERENCE IMAGE */
+/* CONTACT PAGE */
 #contact.active {
     display: flex;
     flex-direction: column;
@@ -268,6 +269,7 @@ main > section.hero.active {
     line-height: 1.7;
 }
 
+/* CONTACT FORM */
 #contactForm {
     display: flex;
     flex-direction: column;
@@ -318,6 +320,41 @@ main > section.hero.active {
     font-size: 14px;
     color: #25313b;
     overflow-wrap: anywhere;
+}
+
+/* GITHUB LINK */
+.github-link {
+    margin-top: 22px;
+    padding-top: 16px;
+    border-top: 1px solid #deded8;
+    text-align: center;
+}
+
+.github-link p,
+.email-link p {
+    color: #42464b;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.github-link a,
+.email-link a {
+    color: #4c5da8;
+    font-weight: bold;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.github-link a:hover,
+.email-link a:hover {
+    color: #253b80;
+    text-decoration: underline;
+}
+
+/* EMAIL LINK */
+.email-link {
+    margin-top: 16px;
+    text-align: center;
 }
 
 /* FOOTER */
@@ -372,5 +409,28 @@ footer {
 
     .contact-card {
         padding: 22px 16px;
+    }
+}
+
+
+
+
+/* Profile Photo */
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #7c3aed;
+    display: block;
+    margin: 0 auto 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Photo */
+@media (max-width: 600px) {
+    .profile-photo {
+        width: 140px;
+        height: 140px;
     }
 }
