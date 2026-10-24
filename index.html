@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jayadhanushika S.I. | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">J.</a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="hero active">
+
+            <!-- PROFILE IMAGE HOLDER -->
+            <div class="profile-image-holder">
+                <img
+                    src="profile.jpeg"
+                    alt="Photo of Jayadhanushika"
+                    class="profile-photo">
+            </div>
+
+            <p class="eyebrow">HELLO, I'M</p>
+
+            <h1>Jayadhanushika S.I.</h1>
+
+            <h2>Student &amp; Aspiring Developer</h2>
+
+            <p class="hero-description">
+                I enjoy learning programming, solving problems,
+                and creating useful applications.
+            </p>
+
+            <button
+                class="btn"
+                type="button"
+                data-section="projects">
+                Explore My Projects
+            </button>
+
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+
+            <h2>About Me</h2>
+            <div class="heading-line"></div>
+
+            <p class="section-description">
+                I am a student passionate about technology and
+                software development. I enjoy developing practical
+                projects that improve my programming skills.
+            </p>
+
+            <button
+                class="btn"
+                type="button"
+                data-section="skills">
+                View My Skills
+            </button>
+
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+
+            <h2>My Skills</h2>
+            <div class="heading-line"></div>
+
+            <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Problem Solving</span>
+            </div>
+
+            <button
+                class="btn"
+                type="button"
+                data-section="projects">
+                View My Projects
+            </button>
+
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+
+            <h2>My Projects</h2>
+            <div class="heading-line"></div>
+
+            <div class="project-grid">
+
+                <!-- PROJECT 1: MULTIPLICATION TABLE TRAINER -->
+                <article class="project-card">
+
+                    <div class="project-icon">✖</div>
+
+                    <h3>Multiplication Table Trainer</h3>
+
+                    <p>
+                        An application to practise multiplication
+                        tables and improve calculation skills.
+                    </p>
+
+                    <span class="tag">Learning Tool</span>
+
+                    <a
+                        href="https://github.com/jayadhanushika15-design/portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link">
+                        View Project on GitHub ↗
+                    </a>
+
+                </article>
+
+                <!-- PROJECT 2: INSURANCE POLICY MANAGEMENT AND PREMIUM REMINDER SYSTEM -->
+                <article class="project-card">
+
+                    <div class="project-icon">🛡</div>
+
+                    <h3>Insurance Policy Management and Premium Reminder System</h3>
+
+                    <p>
+                        A system for managing insurance policy
+                        information and tracking premium due dates
+                        to help users remember upcoming payments.
+                    </p>
+
+                    <span class="tag">Management System</span>
+
+                    <a
+                        href="https://github.com/jayadhanushika15-design/insurance-policy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link">
+                        View Project on GitHub ↗
+                    </a>
+
+                </article>
+
+            </div>
+
+            <button
+                class="btn"
+                type="button"
+                data-section="contact">
+                Contact Me
+            </button>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-page">
+
+            <h2>Contact Me</h2>
+            <div class="heading-line"></div>
+
+            <div class="contact-card">
+
+                <p>Thank you for visiting my portfolio!</p>
+
+                <p>
+                    I'm always interested in learning and exploring new ideas.
+                </p>
+
+                <!-- CONTACT FORM -->
+                <form id="contactForm">
+
+                    <input
+                        type="text"
+                        id="contactName"
+                        name="name"
+                        placeholder="Your Name"
+                        aria-label="Your Name"
+                        required>
+
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        name="email"
+                        placeholder="Your Email"
+                        aria-label="Your Email"
+                        required>
+
+                    <textarea
+                        id="contactMessage"
+                        name="message"
+                        placeholder="Your Message"
+                        aria-label="Your Message"
+                        required></textarea>
+
+                    <button type="submit" class="send-button">
+                        Send Message
+                    </button>
+
+                    <p id="formStatus" role="status" aria-live="polite"></p>
+
+                </form>
+
+                <!-- GITHUB PROFILE -->
+                <div class="github-link">
+
+                    <p>GitHub:</p>
+
+                    <a
+                        href="https://github.com/jayadhanushika15-design"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Visit My GitHub Profile ↗
+                    </a>
+
+                </div>
+
+                <!-- EMAIL ADDRESS -->
+                <div class="email-link">
+
+                    <p>Email:</p>
+
+                    <a href="mailto:jayadhanushika15@gmail.com">
+                        jayadhanushika15@gmail.com
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; <span id="year"></span>
+            Jayadhanushika S.I. | Personal Portfolio
+        </p>
+    </footer>
+
+</body>
+</html>
